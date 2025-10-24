@@ -111,5 +111,5 @@ window.addEventListener('load', function () {
       loader.classList.add('loader-hidden');
       body.classList.remove('loading');
 
-  }, 1500);
+  }, 2500);
 });
