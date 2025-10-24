@@ -854,3 +854,859 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerick & Jane Wedding</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Great+Vibes&family=Playfair+Display&family=raleway&family=Raleway&family=Cookie&family=Updock&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/af9dbbacda3360d434dcce8ab8b6c38f?family=Hello+Paris+Serif+Regular" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- AOS (Animate on Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+    <!-- ============================================ -->
+    <!--                  PRELOADER                   -->
+    <!-- ============================================ -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-split-left"></div>
+        <div class="loader-split-right"></div>
+        <div class="loader-content">
+            <!-- <svg class="drawing-heart" viewBox="0 0 100 100">
+                <path d="M50,30 C10,10 10,60 50,90 C90,60 90,10 50,30 Z"></path>
+            </svg> -->
+            <div class="loader-text">
+                <img class="img-logo" src="img/JJ Logo.png" alt="J & J">
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                  NAVBAR                      -->
+    <!-- ============================================ -->
+    <nav class="navbar navbar-expand-lg mainNav fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand entourage" href="#">Jerick & Jane<span>•</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" onclick="toggleHamburger(this)">
+                <div class="hamburger-animated">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Wedding
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#story">Our Story</a></li>
+                            <li><a class="dropdown-item" href="#entourage">Entourage</a></li>
+                            <li><a class="dropdown-item" href="#events">Venue</a></li>
+                            <li><a class="dropdown-item" href="#dresscode">Dress Code</a></li>
+                            <li><a class="dropdown-item" href="#faq">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registry">Registry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rsvp">RSVP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!--               HERO SECTION                   -->
+    <!-- ============================================ -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <span class="pre-title">We're Getting Married!</span>
+                <h1 class="hero-title" style="font-family: Hello Paris Serif Regular">Jerick <span>&</span> Jane</h1>
+                <p class="hero-text">Join us as we celebrate our love and begin our journey together on December 13, 2025 at Our Lady of Mt. Carmel Parish - Barasoain Church of Malolos City, Bulacan.</p>
+
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#rsvp" class="btn hero-btn">RSVP Now</a>
+                    <a href="#story" class="btn hero-btn-outline">View Details</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="mouse-scroll">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <div class="scroll-text">SCROLL DOWN</div>
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!--              OUR STORY SECTION               -->
+    <!-- ============================================ -->
+    <section id="story" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="img/OurStory1.jpg" alt="Our Story" class="img-fluid story-img">
+                    <!-- <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/our-story.png" alt="Our Story" class="img-fluid story-img"> -->
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="ps-lg-5 mt-5 mt-lg-0">
+                        <h2 class="section-title">Our Story</h2>
+                        <p class="section-subtitle">HOW IT ALL BEGAN</p>
+                        <p>We first crossed paths in 2014, when I (Jane) transferred from BulSU Main to the BulSU Meneses Campus. Back then, we lived in different worlds — different circles, different interests, and even different crushes. Falling for each other was the last thing on our minds. But life has its own way of surprising us.</p>
+                        <p>Through unexpected turns, we found comfort in each other’s company. What started as simple conversations turned into late-night talks, secrets shared, and laughter only we understood. Before we knew it, we became each other’s safe place.</p>
+                        <p>By 2015, friendship blossomed into love. Our journey, like any other, had its share of sweet moments and silly fights — all witnessed by our closest friends. And now, after ten years of laughter, lessons, and countless memories, we’re ready to take the next step — to build our forever together. 💍❤️</p>
+                        <!-- <a href="#" class="btn btn-primary mt-3">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            MEET THE COUPLE SECTION           -->
+    <!-- ============================================ -->
+    <section id="couple" class="section-padding bg-light-pink">
+        <div class="container text-center">
+            <h2 class="section-title" data-aos="fade-up">Meet The Couple</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">TWO SOULS, ONE HEART</p>
+            <div class="row justify-content-center">
+                <!-- Groom -->
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+                    <div class="couple-card text-center">
+                        <img src="img/Jek2.jpg" alt="Groom" class="couple-img">
+                        <!-- <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/groom.png" alt="Groom" class="couple-img"> -->
+                        <h3 class="entourage">Jerick E. Arcega</h3>
+                        <h4>The Groom</h4>
+                        <p>An Information Systems Analyst by day, gamer at night and angler by heart, Jerick finds joy in both digital worlds and quiet waters. He loves travelling, trying exotic foods, and can't wait to build a future with Jane.</p>
+
+                    </div>
+                </div>
+                <!-- Bride -->
+                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                    <div class="couple-card text-center">
+                        <img src="img/Jane.jpg" alt="Bride" class="couple-img">
+                        <h3 class="entourage">Jane Lizer R. Carreon</h3>
+                        <h4>The Bride</h4>
+                        <p>She finds joy in baking, comfort in the pages of a good book, and strength in the bonds of true friendship. With warmth and love, she steps into this beautiful new chapter with Jerick.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            ENTOURAGE SECTION             -->
+    <!-- ============================================ -->
+    <section id="entourage" class="section-padding">
+        <div class="container text-center">
+            <h2 class="section-title" data-aos="fade-up">The Entourage</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">OUR NEAREST & DEAREST</p>
+            <div class="row justify-content-center couple-card">
+                <!-- Groom -->
+                <div class="col-lg-10 mb-10 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-center entourage-header">PARENTS OF THE GROOM</h4>
+                        </div>
+
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Gilberto B. Arcega</h5>
+                                <p>Father</p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Mrs. Corazon E. Arcega</h5>
+                                <p>Mother</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bride -->
+                <div class="col-lg-10 mb-10 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-center entourage-header">PARENTS OF THE BRIDE</h4>
+                        </div>
+
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Noli C. Carreon</h5>
+                                <p>Father</p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Luviminda C. Ramos</h5>
+                                <p>Mother</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Primary Sponsors -->
+                <div class="col-lg-10 mb-10 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-center entourage-header">PRIMARY SPONSORS</h4>
+                        </div>
+
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">FSInsp Wilfredo N. Pascual (Ret.)</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Mrs. Ester B. Batangan</h5>
+                            </div>
+                        </div> <br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Dr. Christopher S. Vicencio</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Dr. Cristina C. Vicencio</h5>
+                            </div>
+                        </div> <br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Albert C. Ramos</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Mrs. Lilibeth C. San Juan</h5>
+                            </div>
+                        </div> <br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Rodel C. Flores</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Rita Tacut</h5>
+                            </div>
+                        </div> <br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Ninong 5</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Mrs. Sheryl DG. Ellamil</h5>
+                            </div>
+                        </div> <br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Ninong 6</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Joan Hope B. Tolibas</h5>
+                            </div>
+                        </div> <br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Ninong 7</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Mrs. Maria Cristina Natividad-Lebardo</h5>
+                            </div> 
+                        </div> <br>
+                    </div>
+                </div>
+
+                <!-- Secondary Sponsors -->
+                <div class="col-lg-10 mb-10 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-center entourage-header">SECONDARY SPONSORS</h4>
+                        </div>
+
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Candle</p>
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Carmelo Alley C. Bacoto</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Ma. Crisalie S. Austria</h5>
+                            </div>
+                        </div> <br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Veil</p>
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Angelo A. Santos</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Shaira Dane M. Tuazon</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Cord</p>
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Jaymark A. Abanag</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Princess Denis L. Carreon</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Ring Bearer</p>
+                            <div class="col-lg-12" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Kion Mikael A. Feliciano</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Coin Bearer</p>
+                            <div class="col-lg-12" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Jose Emmanuel Z. Arcega</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Bible Bearer</p>
+                            <div class="col-lg-12" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Symon Thomas R. Dela Cruz</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Rosary Bearer</p>
+                            <div class="col-lg-12" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Princess Ramos</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <p>Banner Bearer</p>
+                            <div class="col-lg-12" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Skylar Reese S. Carreon</h5>
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+
+                <!-- Bestman and Maid of Honor -->
+                <div class="col-lg-10 mb-10 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-center entourage-header">BESTMAN and MAID OF HONOR</h4>
+                        </div>
+
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Joseph E. Padasas</h5>
+                                <p>Bestman</p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Zybille Mikaella R. Carreon</h5>
+                                <p>Bridesmaid</p>
+                            </div>
+                        </div> <br>
+
+                    </div>
+                </div>
+
+                <!-- Groomsmen and Bridesmaid -->
+                <div class="col-lg-10 mb-10 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-center entourage-header">GROOMSMEN and BRIDESMAID</h4>
+                        </div>
+
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Gilbert Edson Z. Arcega</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Margarette E. Arcega</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Jaylord D. Francisco</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Yvette E. Arcega</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Rowyn T. Mangiliman</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Jim Rose Ann S. Palomares</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Williard Renz D. Silverio</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Mia Joaida M. Pangan</h5>
+                            </div>
+                        </div><br>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Mr. Mark Anthony Hilario</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Ms. Jovelyn S. Mendoza</h5>
+                            </div>
+                        </div><br>
+
+                    </div>
+                </div>        
+
+                <!-- Flowergirls -->
+                <div class="col-lg-10 mb-10 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-center entourage-header">FLOWER GIRLS</h4>
+                        </div>
+                        <div class="row text-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <h5 class="entourage-raleway">Sabbriah Tiffany S. Carreon</h5>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <h5 class="entourage-raleway">Erza Scarlet C. Carreon</h5>
+                            </div>
+                        </div><br>
+
+                    </div>
+                </div>                 
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--              EVENTS SECTION                  -->
+    <!-- ============================================ -->
+    <section id="events" class="section-padding bg-light-pink">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title" data-aos="fade-up">The Wedding Events</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">JOIN US TO CELEBRATE</p>
+            </div>
+            <ul class="timeline">
+                <li data-aos="fade-right">
+                    <div class="timeline-image"><i class="fas fa-church"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>The Ceremony</h4>
+                            <p class="subheading">Saturday, Dec 13, 2025 | 11:00 AM</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Join us as we exchange vows at the beautiful Barasoain Church. Please be seated by 10:45 AM.</p>
+                            <a href="https://maps.app.goo.gl/xBfx3rC6xWYH7LU7A" target="_blank"><i class="fas fa-map-marker-alt me-2"></i>Paseo del Congreso Street corner Don Antonio Bautista Street, Brgy. San Gabriel, Malolos, 3000</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-inverted" data-aos="fade-left">
+                    <div class="timeline-image"><i class="fas fa-utensils"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>The Reception</h4>
+                            <p class="subheading">Saturday, Dec 13, 2025 | 12:00 NN</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Time to celebrate! Join us for an afternoon lunch, dancing, and making memories at One Grand Pavilion Events Place & Villas.</p>
+                            <a href="https://maps.app.goo.gl/RiFCMqAtyzjXV7pS6" target="_blank"><i class="fas fa-map-marker-alt me-2"></i>Blas Ople Diversion Rd, Malolos, Bulacan</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--              GALLERY SECTION                 -->
+    <!-- ============================================ -->
+    <!-- Include Bootstrap CSS & JS (if not yet included) -->
+    <section id="gallery" class="section-padding">
+    <div class="container">
+        <div class="text-center">
+        <h2 class="section-title" data-aos="fade-up">Photo Gallery</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">MOMENTS WE CHERISH</p>
+        </div>
+
+        <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+            <a href="img/Gallery1.JPG" data-lightbox="gallery">
+                <img src="img/Gallery1.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery2.JPG" data-lightbox="gallery">
+                <img src="img/Gallery2.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery3.JPG" data-lightbox="gallery">
+                <img src="img/Gallery3.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery4.JPG" data-lightbox="gallery">
+                <img src="img/Gallery4.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery5.JPG" data-lightbox="gallery">
+                <img src="img/Gallery5.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery6.JPG" data-lightbox="gallery">
+                <img src="img/Gallery6.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery7.JPG" data-lightbox="gallery">
+                <img src="img/Gallery7.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery8.JPG" data-lightbox="gallery">
+                <img src="img/Gallery8.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery9.JPG" data-lightbox="gallery">
+                <img src="img/Gallery9.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="7"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="8"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="9"></button>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                 RSVP SECTION                 -->
+    <!-- ============================================ -->
+    <section id="rsvp" class="section-padding rsvp-section">
+        <div class="overlay-bg"></div>
+        <div class="container text-center rsvp-content">
+            <h2 class="section-title" data-aos="fade-up">Are You Attending?</h2><br>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">PLEASE RESPOND BY <B>NOVEMBER 15, 2025</B></p>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">We can't wait to celebrate with you! Please let us know if you can make it.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScerx6Jq40-1V-5aCBFMZ_fOo9zQWAOOL0XAbuTxUlUEA_m3A/viewform?embedded=true" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="300" target="_blank">RSVP Now</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 DRESS GUIDE                  -->
+    <!-- ============================================ -->
+
+    <section id="dresscode" class="section-padding">
+        <div class="container text-center couple-card">
+            <h2 class="section-title">Dress code</h2>
+            <div class="row align-items-center">
+
+                <div class="col-lg-12" data-aos="fade-left">
+
+                    <div class="ps-lg-12 mt-5 mt-lg-0 text-center" >
+                        <p class="section-subtitle">Color palette</p>
+                        <!-- Overlapping circles -->
+                        <div class="palette-container d-flex justify-content-center align-items-center flex-wrap mb-4">
+                            <div class="circle" style="background:#1a1c29;" ></div>
+                            <div class="circle" style="background:#17264f;" ></div>
+                            <div class="circle" style="background:#b78f6b;" ></div>
+                            <div class="circle" style="background:#e5d5c4;" ></div>
+                            <div class="circle" style="background:#fff1df;" ></div>  <!--border:1px solid #ccc; -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container mt-4">
+                    <div class="row text-center">
+                        <!-- Primary Sponsors -->
+                        <div class="col-lg-12 col-md-6 mb-4">
+                        <p class="section-subtitle">Primary Sponsors</p>
+                            <p><strong>Ninang:</strong> Long Gown and Heels/Formal Shoes</p>
+                            <p><strong>Ninong:</strong> Barong Tagalog and Black/Brown Formal Shoes</p>
+                        </div>
+
+                        <!-- Secondary Sponsors -->
+                        <div class="col-lg-12 col-md-6 mb-4">
+                        <p class="section-subtitle">Secondary Sponsors</p>
+                            <p><strong>Maid of Honor:</strong> Long Gown and Heels/Formal Shoes</p>
+                            <p><strong>Bridesmaid:</strong> Barong Tagalog and Black/Brown Formal Shoes</p>
+                            <p><strong>Bestman:</strong> Baby Blue Vest, Whitelong Sleeve and Black/Brown Formal Shoes</p>
+                            <p><strong>Groomsmen:</strong> Navy Blue Vest, Whitelong Sleeve and Black/Brown Formal Shoes</p>
+                            
+                        </div>
+
+                        <!-- Guests -->
+                        <div class="col-lg-12 col-md-12 mb-4">
+                        <p class="section-subtitle">Guests</p>
+                            <p>Kindly wear semi-formal or smart casual attire that will match our color palette.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            GIFT REGISTRY SECTION             -->
+    <!-- ============================================ -->
+    <section id="registry" class="section-padding">
+        <div class="container text-center">
+            <h2 class="section-title" data-aos="fade-up">Gift Guide</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">YOUR PRESENCE IS OUR PRESENT</p>
+            <p class="mb-5" data-aos="fade-up" data-aos-delay="200">Your love and support are the greatest gifts we could ask for. <br> Should you wish to bless us futher, a monetary gift will help us start our journey together.</p>
+            <div class="row justify-content-center align-items-center g-4">
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            FAQs             -->
+    <!-- ============================================ -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Frequently Asked Questions</h2>
+            <div class="row couple-card">
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">WHEN DO I RSVP BY?</h4>
+                        </div>
+                        <p>RSVP is an abbreviation of the French word <i>‘répondez s'il vous plaît,’</i> which directly translates to <i>‘please reply/respond’</i>.</p>
+                        <p>The favor of your reply is requested <strong>on or before November 22, 2025</strong>. To respond, <strong></strong>please navigate the RSVP Now section of this website for details</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">WHAT IF I DON’T RSVP IN TIME?</h4>
+                        </div>
+                        <p><strong>We will miss celebrating with you</strong>. We need to provide our venue exact numbers by a certain date, so please don’t RSVP late.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">CAN I BRING SOMEONE / PLUS-ONE WITH ME?</h4>
+                        </div>
+                        <p><strong>No, unless we personally confirmed</strong>. Kindly refer to the number of seat/s allotted 
+                            for you in the invitation. We can only accommodate a limited number of guests
+                            due to financial and venue restrictions. Only those close to our hearts are invited.
+                            Thank you for your understanding, feel free to reach out for concerns.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">ARE KIDS ALLOWED?</h4>
+                        </div>
+                        <p>We certainly love your kids, but due to necessity rather than choice, we regretfully
+                            cannot accommodate them at the venue. <strong> The only kids attending are those
+                            who are part of the entourage and those requested</strong>. We hope you understand
+                            and consider this as a day for yourself.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">WHAT TIME WILL THE CEREMONY START?</h4>
+                        </div>
+                        <p>The <strong>procession will promptly start at 11:00 AM. We recommend you aim to
+                            arrive by 10:30 AM at our church location</strong> to ensure you are able to comfortably
+                            arrive on time. Kindly consider traffic and travel time. Cocktails, lunch, program,
+                            and party will follow at the reception venue.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">CAN WE TAKE PHOTO OR VIDEOS DURING THE WEDDING CEREMONY?</h4>
+                        </div>
+                        <p>Please keep our ceremony, <strong> CAMERA-FREE</strong>. We hired an amazing team to capture 
+                            the moments. Though our ‘I Dos’ are unplugged, our reception is not. Once we
+                            finish exchanging ‘I dos’ you are free to take shots. Most importantly, do not block
+                            the view of our hired professional photo and video team. We promise to share the
+                            photos after the wedding. <strong>Strictly No Facebook Livestreaming during the
+                            ceremony and program</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">WHERE SHOULD I PARK?</h4>
+                        </div>
+                        <p>There is a <strong>designated parking</strong> lot at our reception venue. Kindly seek assistance with our coordinators.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">CAN WE SEAT ANYWHERE DURING THE RECEPTION?</h4>
+                        </div>
+                        <p><strong>No, we planned a seating arrangement</strong> for our guest’s convenience and group
+                            familiarity. Our coordinator will gladly assist you on your designated seats.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 mb-12 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-left">
+                        <div class="col-lg-12 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="text-left entourage-header">WHEN IS THE APPROPRIATE TIME TO LEAVE?</h4>
+                        </div>
+                        <p>It took us months to plan a wedding that everyone will hopefully enjoy. <strong>Please do
+                            not eat and run, and as much as possible join us until the end of the program as
+                            we would like to personally thank you</strong> for celebrating with us. We aim to end the
+                            program by 4:00pm.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                   FOOTER                     -->
+    <!-- ============================================ -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row gy-5">
+
+                <!-- Contact Info Section -->
+                 <h5>For any concern, Please Contact Us in Facebook Messenger</h5>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Jane Lizer Carreon</h5>
+                    <ul class="list-unstyled contact-info">
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="col-lg-3 col-md-4">
+                    <h5> Jerick Arcega   </h5>
+                    <ul class="list-unstyled contact-info">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="mb-0">Copyright © 2025 <a href="" target="_blank">Jerick & Jane Wedding</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!--              JAVASCRIPT FILES                -->
+    <!-- ============================================ -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Custom JS -->
+     <script src="script.js"></script>
+
+</body>
+</html>
