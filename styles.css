@@ -60,6 +60,14 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.section-subtitle2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
@@ -231,6 +239,14 @@ a:hover {
   font-family: var(--heading-font);
   font-weight: 700;
   font-size: 1.8rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.navbar-brand1 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 2.8rem;
   letter-spacing: 1px;
   position: relative;
 }
@@ -1042,10 +1058,15 @@ a:hover {
   padding-bottom: 6px;
 }
 
+.entourage-greatvibes1 {
+  font-size: 42px;
+  font-family:'Great Vibes', cursive;
+  margin-bottom: -1rem;
+}
 .entourage-greatvibes {
-  margin-top: 10px;
   font-size: 32px;
   font-family:'Great Vibes', cursive;
+  margin-bottom: -1rem;
 }
 
 .entourage-playfair {
@@ -1063,7 +1084,9 @@ a:hover {
 .entourage-raleway {
   margin-top: 5px;
   font-size: 20px;
-  font-family:'Raleway', sans-serif;
+  /* font-family:'Raleway', sans-serif; */
+  font-family: var(--body-font);
+  font-weight: 500;
 }
 
 .entourage-cookie {
@@ -1226,6 +1249,10 @@ a:hover {
   .gap-5 {
     gap: 1rem !important;
   }
+
+  .rsvp-section {
+    background-size: 400px 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1255,6 +1282,9 @@ a:hover {
   .circle {
   margin-left: -45px; /* controls overlap */
 }
+  .rsvp-section {
+    background-size: 400px 300px;
+  }
 }
 
 @media (max-width: 991.98px) {
