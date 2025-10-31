@@ -113,3 +113,24 @@ window.addEventListener('load', function () {
 
   }, 2000);
 });
+
+      const loaderWrapper = document.getElementById('loader');
+      const percent = document.getElementById('loaderPercent');
+      let value = 0;
+      const duration = 2000; // 2 seconds total
+      const stepTime = 100; // update every 0.1s
+      const increment = 100 / (duration / stepTime);
+
+      const interval = setInterval(() => {
+        value += increment;
+        if (value >= 100) {
+          value = 100;
+          percent.textContent = '100%';
+          clearInterval(interval);
+
+          setTimeout(() => loaderWrapper.classList.add('hidden'), 300);
+          setTimeout(() => loaderWrapper.remove(), 1300);
+        } else {
+          percent.textContent = Math.round(value) + '%';
+        }
+      }, stepTime);

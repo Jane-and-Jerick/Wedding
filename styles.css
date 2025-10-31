@@ -95,6 +95,70 @@ a:hover {
 
 /* --- Loader Container --- */
 .loader-wrapper {
+position: fixed;
+inset: 0;
+width: 100%;
+height: 100vh;
+display: flex;
+overflow: hidden;
+z-index: 3000;
+}
+
+
+.loader-split-left,
+.loader-split-right {
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+transition: transform 1s ease-in-out;
+}
+
+
+.loader-split-left {
+left: 0;
+background: #ffffff;
+}
+
+
+.loader-split-right {
+right: 0;
+background: #ffffff;
+}
+
+
+.loader-content {
+position: relative;
+z-index: 10;
+margin: auto;
+text-align: center;
+color: #ffffff;
+}
+
+
+#loaderPercent {
+font-size: 2.5rem;
+font-weight: 700;
+color: #4169e1;
+}
+
+
+.loader-wrapper.hidden .loader-split-left {
+transform: translateX(-100%);
+}
+
+
+.loader-wrapper.hidden .loader-split-right {
+transform: translateX(100%);
+}
+
+
+.loader-wrapper.hidden .loader-content {
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+/* 
+.loader-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -122,6 +186,7 @@ a:hover {
 .loader-split-right {
   right: 0;
 }
+*/
 
 /* Class to hide the loader */
 .loader-hidden {
@@ -1137,6 +1202,8 @@ a:hover {
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
   z-index: 5;
 }
+
+
 
 
 /* --- Responsive Adjustments --- */
