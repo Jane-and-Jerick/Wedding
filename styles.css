@@ -1250,7 +1250,7 @@ a:hover {
   }
 
   .rsvp-section {
-    background-size: 400px 300px;
+    background-size: 500px 400px;
   }
 }
 
@@ -1279,10 +1279,10 @@ a:hover {
   }
 
   .circle {
-  margin-left: -45px; /* controls overlap */
+  margin-left: -51px; /* controls overlap */
 }
   .rsvp-section {
-    background-size: 400px 300px;
+    background-size: 500px 400px;
   }
 }
 
